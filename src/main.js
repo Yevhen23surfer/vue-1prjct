@@ -5,7 +5,7 @@ const app = Vue.createApp({
           product: 'Socks',
           image: './assets/images/socks_green.jpg',
           url: 'https://www.vuemastery.com/',
-          inventory: 100,
+          inventory: true,
           onSale: true,
           details: ['50% cotton', '30% wool', '20% polyester'],
           sizes: ['S', 'M', 'L', 'XL'],
@@ -16,7 +16,7 @@ const app = Vue.createApp({
       }
   },
   methods: {
-    addToCard () {
+    addToCart () {
       this.cart += 1
     },
     removeFromCart () {
